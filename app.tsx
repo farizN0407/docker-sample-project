@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { TimeTracker } from './components/TimeTracker';
-import { WeeklySummary } from './components/WeeklySummary';
 import { Timer } from 'lucide-react';
 
 interface TimeEntry {
@@ -42,11 +41,6 @@ export default function App() {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <h2 className="text-xl mb-4">Log Your Time</h2>
             <TimeTracker onEntriesChange={handleEntriesChange} />
-          </div>
-
-          {/* Weekly Summary Section */}
-          <div>
-            <WeeklySummary entries={entries} />
           </div>
         </div>
       </div>
